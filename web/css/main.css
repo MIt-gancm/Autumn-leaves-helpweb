@@ -1,0 +1,159 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  z-index: -1;
+  transition: transform 0.3s ease-out;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 48px;
+  margin-top: 200px;
+  transition: all 0.5s;
+}
+
+h1.shrink {
+  font-size: 32px;
+  margin-top: 50px;
+}
+
+h2 {
+  text-align: center;
+  color: #75bcf7;
+  font-size: 36px;
+  margin-top: 150px;
+  transition: all 0.4s;
+}
+
+h2.shrink {
+  font-size: 32px;
+  margin-top: 32px;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s;
+}
+
+.intro.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.intro .dialog {
+  width: 29%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 35px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.intro .dialog:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transform: translateY(-5px);
+}
+
+.intro img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  color: #333;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.content {
+  flex: 1;
+  min-height: 100vh; /* 确保内容至少占满一个视口高度 */
+}
+
+footer {
+  margin-top: auto;
+}
+
+.contact {
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+}
+
+.hitokoto {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.hitokoto-from {
+  text-align: right;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* 媒体查询：针对小屏幕设备 */
+@media screen and (max-width: 768px) {
+  .intro {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .intro .dialog {
+      width: 80%;
+      margin: 0 auto 30px;
+  }
+
+  h1 {
+      font-size: 36px;
+      margin-top: 100px;
+  }
+
+  h1.shrink {
+      font-size: 28px;
+      margin-top: 30px;
+  }
+
+  h2 {
+      font-size: 28px;
+      margin-top: 80px;
+  }
+
+  h2.shrink {
+      font-size: 24px;
+      margin-top: 20px;
+  }
+
+
+  .dialog-hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+  }
+  
+  
+}

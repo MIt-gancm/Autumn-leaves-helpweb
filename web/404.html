@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - 页面未找到</title>
+    <style>
+        @font-face {
+            font-family: 'Minecraft';
+            src: url('https://cdn.jsdelivr.net/gh/South-Paw/typeface-minecraft@master/fonts/minecraft.woff2') format('woff2'),
+                 url('https://cdn.jsdelivr.net/gh/South-Paw/typeface-minecraft@master/fonts/minecraft.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Minecraft', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background {
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            background-image: url('./images/bg2.png');
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px);
+            z-index: -2;
+        }
+
+        .red-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(119, 32, 32, 0.3);
+            z-index: -1;
+        }
+
+        .container {
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 2px 2px #3f3f3f;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 72px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            background-color: #8b8b8b;
+            border: 2px solid #373737;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 24px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            min-width: 200px;
+        }
+
+        .button:hover {
+            background-color: #9f9f9f;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="red-overlay"></div>
+    <div class="container">
+        <h1>你失败了！</h1>
+        <p>404 - 页面未找到</p>
+        <a href="./index.html" class="button">重生</a>
+    </div>
+</body>
+</html>
