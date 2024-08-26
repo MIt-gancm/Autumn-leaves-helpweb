@@ -8,7 +8,7 @@ const helpContent = {
     install: {
         title: "如何安装Autumn-leaves脚本？",
         content: `
-# 安装ZRF脚本
+# 安装Autumn-leaves脚本
 
 1. 首先，确保你的系统满足以下其一要求：
    - termux
