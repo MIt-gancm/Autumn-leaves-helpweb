@@ -11,9 +11,18 @@ const helpContent = {
 2. 打开命令行终端，运行以下命令：
 
 \`\`\`shell
-apt update -y & apt upgrade -y & git clone https://github.com/MIt-gancm/Autumn-leaves .gancm 
+# Termux
+
+pkg upgrade -y & pkg update -y & pkg install git -y & git clone https://github.com/MIt-gancm/Autumn-leaves ~/.gancm 
 # github
-apt update -y & apt upgrade -y & git clone https://gitee.com/MIt-gancm/Autumn-leaves .gancm 
+pkg upgrade -y & pkg update -y & pkg install git -y & git clone https://gitee.com/MIt-gancm/Autumn-leaves ~/.gancm 
+# gitee
+
+# Linux
+
+apt upgrade -y & apt update -y  & akg install git -y & git clone https://github.com/MIt-gancm/Autumn-leaves .gancm 
+# github
+apt upgrade -y & apt update -y & akg install git -y & git clone https://gitee.com/MIt-gancm/Autumn-leaves .gancm 
 # gitee
 \`\`\`
 
@@ -30,10 +39,19 @@ why_not_run: {
     content: `
 \`\`\`shell
 rm -rfv ~/.gancm/gancm
-# 安装了proot的一定要备份有 
-apt update -y & apt upgrade -y & git clone https://github.com/MIt-gancm/Autumn-leaves .gancm 
+# 安装了proot的一定要有备份
+# Termux
+
+pkg upgrade -y & pkg update -y & pkg install git -y & git clone https://github.com/MIt-gancm/Autumn-leaves ~/.gancm 
 # github
-apt update -y & apt upgrade -y & git clone https://gitee.com/MIt-gancm/Autumn-leaves .gancm 
+pkg upgrade -y & pkg update -y & pkg install git -y & git clone https://gitee.com/MIt-gancm/Autumn-leaves ~/.gancm 
+# gitee
+
+# Linux
+
+apt upgrade -y & apt update -y  & akg install git -y & git clone https://github.com/MIt-gancm/Autumn-leaves .gancm 
+# github
+apt upgrade -y & apt update -y & akg install git -y & git clone https://gitee.com/MIt-gancm/Autumn-leaves .gancm 
 # gitee
 \`\`\`
 画饼~~（proot的有空换个位置存储方便一点）~~
